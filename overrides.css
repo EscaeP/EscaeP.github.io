@@ -1,0 +1,13 @@
+.art-no-picture { outline: 1px solid var(--ink); outline-offset: -12px; }
+.works .project:nth-of-type(2) .art-no-picture,
+.works .project:nth-of-type(3) .art-no-picture,
+.works .project:nth-of-type(7) .art-no-picture { background: var(--orange); }
+.works .project:nth-of-type(4) .art-no-picture,
+.works .project:nth-of-type(8) .art-no-picture { background: var(--blue); }
+.works .project:nth-of-type(5) .art-no-picture,
+.works .project:nth-of-type(9) .art-no-picture { background: var(--pink); }
+.works .project:nth-of-type(6) .art-no-picture,
+.works .project:nth-of-type(10) .art-no-picture { background: var(--green); }
+.art-sleep-but-dont-slip { background: #7accef url("assets/sleep-but-dont-slip.png") center / cover no-repeat; }
+.art-say-goodbye { background: #f6d800 url("assets/say-goodbye-01.png") center / cover no-repeat; }
+.project:has(.art-say-goodbye):hover .art-say-goodbye { background-image: url("assets/say-goodbye-02.png"); }
