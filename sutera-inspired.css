@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap');
+:root{--paper:#ecebe4;--ink:#20251f;--orange:#ef6a45;--blue:#b7d9dc;--pink:#e7b9ba;--green:#c7d89c}
+body{font-family:'DM Sans','Noto Sans SC',sans-serif}
+.nav{height:78px;padding:0 3.5vw;background:var(--paper)}
+.logo{font-size:28px;letter-spacing:-.09em}
+.nav nav,.eyebrow,.section-head>p:last-child,.project-meta p,.project-meta span,.app-card b,footer{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.nav nav{gap:38px}
+.hero{min-height:calc(100svh - 78px);padding:3vw 3.5vw 3.5vw;isolation:isolate}
+.hero h1{font-size:clamp(75px,12vw,190px);line-height:1.02;letter-spacing:-.09em;margin:auto 0 7%;max-width:none;font-weight:900}
+.hero h1 em{color:var(--ink)}
+.hero-bottom p{font-size:clamp(15px,1.5vw,22px);line-height:1.55}
+.sun{width:min(48vw,670px);right:5vw;top:10%;background:var(--green);border:1px solid var(--ink);box-shadow:0 0 0 52px var(--paper),0 0 0 53px var(--ink),0 0 0 105px var(--paper),0 0 0 106px var(--ink);z-index:-1;animation:orb 8s ease-in-out infinite alternate}
+.hero-stamp{position:absolute;right:20%;top:37%;font-size:clamp(28px,4vw,58px);font-weight:900;letter-spacing:-.07em;line-height:.96;transform:rotate(-14deg);text-align:center}
+.round-link{width:66px;height:66px}
+.round-link:hover{background:var(--green);color:var(--ink)}
+.side-note{right:1vw;bottom:3vw}
+.intro{position:relative;padding:4vw 3.5vw 12vw;min-height:85vh}
+.statement{margin-top:10vw;font-size:clamp(48px,7.1vw,108px);line-height:1.16;letter-spacing:-.07em;font-weight:900}
+.statement mark{color:#80991d}
+.intro-note{max-width:300px;margin:5vw 0 0 auto;font-size:17px;line-height:1.7}
+.section-head{padding:22px 3.5vw}
+.project{padding:3.5vw;border-top:1px solid var(--ink)}
+.project>a{display:grid;grid-template-columns:1fr 1fr;gap:3.5vw;align-items:end}
+.project:nth-of-type(even)>a{direction:rtl}
+.project:nth-of-type(even)>a>*{direction:ltr}
+.art{height:min(45vw,660px)}
+.project-meta{display:block;padding:0 0 2vw;border-bottom:1px solid var(--ink)}
+.project-meta:before{content:'SELECTED PROJECT';display:block;font-size:11px;font-weight:700;letter-spacing:.1em;margin-bottom:4vw}
+.project-meta h2{font-size:clamp(34px,5.5vw,82px);line-height:1;letter-spacing:-.07em;margin-bottom:2vw}
+.project-meta p,.project-meta span{display:inline-block;font-size:12px}
+.project-meta span{float:right}
+.project a:hover .art{filter:none}
+.project a:hover .art:not(.art-no-picture){background-size:105%}
+.art-no-picture{background:var(--green)!important;outline:1px solid var(--ink);outline-offset:-16px}
+.art-no-picture span{font-size:clamp(50px,8vw,120px)}
+.apps .section-head{border-bottom:1px solid var(--ink)}
+.app-card{min-height:500px;padding:3vw 3.5vw}
+.app-card h2{font-size:clamp(48px,6.5vw,105px);line-height:1;letter-spacing:-.08em}
+.app-card p{max-width:350px;line-height:1.5}
+.contact{background:var(--ink);color:var(--paper);padding:4vw 3.5vw 10vw}
+.contact h2{font-size:clamp(66px,9vw,140px);line-height:1;letter-spacing:-.09em}
+.contact h2 strong{color:var(--green)}
+.contact-links a{border-color:var(--paper)}
+.contact-links a:hover{color:var(--green)}
+.contact div>p{line-height:1.6}
+footer{padding:26px 3.5vw}
+@keyframes orb{to{transform:translateY(-22px) rotate(8deg)}}
+@media(max-width:700px){.nav{height:65px;padding:0 5vw}.nav nav{display:flex;gap:14px;font-size:10px}.menu{display:none}.hero{min-height:690px;padding:6vw 5vw 8vw}.hero h1{font-size:clamp(64px,17vw,104px);margin:35vw 0 auto}.sun{width:65vw;right:-7vw;top:18%;box-shadow:0 0 0 24px var(--paper),0 0 0 25px var(--ink),0 0 0 49px var(--paper),0 0 0 50px var(--ink)}.hero-stamp{top:30%;right:12%;font-size:7vw}.intro{padding:7vw 5vw 20vw;min-height:auto}.statement{margin-top:20vw;font-size:clamp(42px,10vw,67px)}.intro-note{margin-top:12vw}.project{padding:5vw 5vw 12vw}.project>a,.project:nth-of-type(even)>a{display:flex;flex-direction:column;direction:ltr;align-items:stretch;gap:5vw}.art{height:76vw;width:100%}.project-meta:before{margin-bottom:6vw}.project-meta h2{font-size:clamp(38px,9vw,58px)}.section-head{padding:20px 5vw}.app-card{min-height:340px;padding:7vw 5vw}.contact{padding:9vw 5vw 20vw}.contact h2{font-size:16vw}.contact-links a{font-size:clamp(22px,6vw,36px)}footer{padding:22px 5vw}}
+@media(prefers-reduced-motion:reduce){.sun{animation:none}html{scroll-behavior:auto}}
+
+/* Project notes share the page's editorial grid and restrained palette. */
+.project-story{margin-top:clamp(48px,6vw,96px);border-top:1px solid var(--ink);padding-top:32px}
+.story-intro,.story-highlights{display:grid;grid-template-columns:minmax(170px,1fr) minmax(0,2fr);gap:3.5vw}
+.story-label{margin:0;font-size:11px;line-height:1.7;letter-spacing:.12em;font-weight:700;color:#59604f}
+.story-copy{max-width:760px}
+.story-copy h3{margin:0 0 30px;font-size:clamp(26px,3.2vw,46px);font-weight:700;line-height:1.45;letter-spacing:-.045em;text-wrap:balance}
+.story-copy p,.highlight-list p{font-size:16px;font-weight:400;line-height:1.9;letter-spacing:.015em;overflow-wrap:break-word}
+.story-copy p+p{margin-top:18px}
+.story-highlights{margin-top:56px;padding-top:28px;border-top:1px solid rgba(32,37,31,.24)}
+.highlight-list{list-style:none;padding:0;margin:0;max-width:760px}
+.highlight-list li{display:grid;grid-template-columns:48px minmax(0,1fr);gap:18px;padding:24px 0;border-bottom:1px solid rgba(32,37,31,.18)}
+.highlight-list li:first-child{padding-top:0}
+.highlight-list li:last-child{border-bottom:0;padding-bottom:0}
+.highlight-number{font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;color:#71851f;padding-top:6px}
+.highlight-list h4{font-size:21px;line-height:1.5;letter-spacing:-.025em;margin:0 0 10px;font-weight:700}
+@media(min-width:1400px){.story-copy p,.highlight-list p{font-size:18px}}
+@media(max-width:700px){.project-story{margin-top:40px;padding-top:24px}.story-intro,.story-highlights{grid-template-columns:1fr;gap:24px}.story-copy h3{font-size:27px;margin-bottom:24px}.story-copy p,.highlight-list p{font-size:15px;line-height:1.85}.story-highlights{margin-top:36px;padding-top:24px}.highlight-list li{grid-template-columns:28px minmax(0,1fr);gap:12px;padding:22px 0}.highlight-list h4{font-size:19px}.story-label{font-size:10px}}

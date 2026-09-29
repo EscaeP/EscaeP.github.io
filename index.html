@@ -10,6 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="overrides.css" />
+    <link rel="stylesheet" href="sutera-inspired.css" />
+    <link rel="stylesheet" href="archive.css" />
+    <link rel="stylesheet" href="shelf.css" />
+    <script src="archive.js" defer></script>
   </head>
   <body>
     <div class="grain" aria-hidden="true"></div>
@@ -18,39 +22,94 @@
       <nav aria-label="Main navigation">
         <a href="#work">Work</a><a href="#apps">Apps</a><a href="#contact">Contact</a>
       </nav>
-      <button class="menu" aria-label="Open menu">MENU <i></i></button>
+      <a class="menu" href="#work" aria-label="浏览作品">WORK ↓</a>
     </header>
 
     <main id="top">
       <section class="hero">
-        <p class="eyebrow">SELECTED WORKS / 2024—2026</p>
-        <h1>Just make it<br /><em>exist</em> first.</h1>
-        <div class="hero-bottom">
-          <p>Games and apps.<br />Playful ideas for curious people.</p>
-          <a class="round-link" href="#work" aria-label="View selected work">↓</a>
+        <div class="hero-topline"><p class="eyebrow"><span class="live-dot"></span> INDEPENDENT PLAY / EST. 2024</p><p class="eyebrow">个人作品档案 · VOL. 01</p></div>
+        <h1>想法，<br />值得<em>播放。</em><span class="title-star" aria-hidden="true">✳</span></h1>
+        <div class="media-stage" aria-hidden="true">
+          <div class="disc hero-disc"><span>ESCAPE®<br /><small>DVD / DIGITAL EXPERIMENTS</small></span></div>
+          <div class="cassette">
+            <div class="tape-top"><b>ESCAPE®</b><span>PERSONAL ARCHIVE</span></div>
+            <div class="tape-label"><span>SIDE A / SELECTED WORKS</span><strong>好奇心存档。</strong><div class="label-rule"></div><small>GAME · TOOL · EXPERIMENT　/　2024—2026</small></div>
+            <div class="tape-window"><i class="reel"></i><span>▶<br />PLAY</span><i class="reel"></i></div>
+            <div class="tape-bottom"><b>VHS</b><span>HI-FI STEREO</span><strong>E—120</strong></div>
+          </div>
         </div>
-        <div class="sun" aria-hidden="true"></div>
-        <p class="side-note">SHANGHAI / CHINA<br />31° 14′ N, 121° 29′ E</p>
+        <div class="hero-bottom">
+          <p>游戏、工具与交互实验。<br />从好奇心开始，做成可以玩的东西。</p>
+          <div class="stage-note">Please rewind.<br />好想法，值得再来一次。</div>
+          <a class="play-link" href="#work"><span>▶</span> 打开作品档案 <small>SCROLL TO PLAY ↓</small></a>
+        </div>
+        <div class="transport" aria-hidden="true"><span>● REC</span><span>SP &nbsp; 00:00:01</span><span>12 ITEMS / NO SIGNAL LOST</span></div>
       </section>
 
       <section class="intro">
-        <p class="eyebrow">01 / A LITTLE HELLO</p>
-        <p class="statement">Every work begins<br />with one small question:<br /><mark>what if we play?</mark></p>
+        <p class="eyebrow">01 / 内页笔记 · LINER NOTES</p>
+        <p class="statement">你好，<br />祝你我<mark>玩得开心</mark></p>
+        <p class="intro-note">这里收集了我完成的游戏、应用和实验。每个项目都有自己的玩法、节奏和一点意外。</p>
       </section>
 
       <section class="works" id="work">
-        <div class="section-head"><p class="eyebrow">02 / GAMES</p><p>( 10 )</p></div>
+        <div class="section-head"><p class="eyebrow">02 / 录像带收藏 · GAME ARCHIVE</p><p>10 TAPES / SIDE A</p></div>
+        <div class="archive-heading"><h2>看看这些吧</h2><p>游戏作品 / 2024—2026<br />点击侧面，取出作品 ↗</p></div>
         <article class="project project--orange">
           <a href="https://escaep.itch.io/last-seat" target="_blank" rel="noopener noreferrer" aria-label="Play One Last Seat on itch.io">
             <div class="art art-one-last-seat" role="img" aria-label="One Last Seat game poster"></div>
             <div class="project-meta"><h2>ONE LAST SEAT</h2><p>Game · Play on itch.io</p><span>PLAY ↗</span></div>
           </a>
+          <details class="project-story"><summary>阅读设计笔记 <span>ONE LAST SEAT / LINER NOTES ＋</span></summary><div class="story-content">
+            <div class="story-intro">
+              <p class="story-label">ABOUT THE GAME / 游戏说明</p>
+              <div class="story-copy">
+                <h3 id="last-seat-description">用电话交换情报，<br />用谈判争夺最后一个席位。</h3>
+                <p>ONE LAST SEAT 是一款以电话交涉为核心的策略游戏。一名人类玩家与多个 AI 角色共同争夺席位。</p>
+                <p>玩家需要推导隐藏接入码，验证席位电话，并与其他角色交换情报、交易电话卡和金币。红灯亮起后，玩家拨打已验证的席位电话。多人同时拨打同一席位时，通过竞拍决定归属。</p>
+                <p>每轮结束后，所有角色投票废弃一个席位。失去正式资格的角色仍可参与谈判、交易和投票，继续影响结果。</p>
+              </div>
+            </div>
+            <div class="story-highlights">
+              <h3 class="story-label">DESIGN HIGHLIGHTS / 设计亮点</h3>
+              <ol class="highlight-list">
+                <li><span class="highlight-number" aria-hidden="true">01</span><div><h4>AI 参与决策与交涉</h4><p>方案中的 AI 角色拥有独立目标、私人记忆和有限信息。它们可以主动联系玩家，也可以相互谈判，建立玩家尚不知道的联盟。</p></div></li>
+                <li><span class="highlight-number" aria-hidden="true">02</span><div><h4>席位数量由投票决定</h4><p>席位不会自动减少。角色通过投票决定废弃哪个席位。这个决定同时改变下一轮的竞争压力，以及电话卡和情报的价值。</p></div></li>
+                <li><span class="highlight-number" aria-hidden="true">03</span><div><h4>淘汰后仍有决策空间</h4><p>场外人仍能交易已有资产、资助其他角色和参与投票。失去席位会改变参与方式，也会产生新的策略。</p></div></li>
+                <li><span class="highlight-number" aria-hidden="true">04</span><div><h4>生存与收益形成不同目标</h4><p>每枚金币都带有角色姓名。游戏结束后，只有最终存活者的姓名金币有效。因此，最后坐在席位上的角色，未必拥有最高收益。</p></div></li>
+                <li><span class="highlight-number" aria-hidden="true">05</span><div><h4>AI 决策，程序裁决</h4><p>AI 负责谈判、判断和欺骗。程序负责号码验证、资产转移、投票统计和竞拍结算。这个分工让自由交涉建立在明确规则上。</p></div></li>
+              </ol>
+            </div>
+          </div></details>
         </article>
         <article class="project project--blue">
           <a href="https://escaep.itch.io/say-goodbye-to-goodluck" target="_blank" rel="noopener noreferrer" aria-label="Play Say Goodbye to Goodluck on itch.io">
             <div class="art art-say-goodbye" role="img" aria-label="Say Goodbye to Goodluck game posters"></div>
             <div class="project-meta"><h2>SAY GOODBYE TO GOODLUCK</h2><p>Game · Play on itch.io</p><span>PLAY ↗</span></div>
           </a>
+          <details class="project-story"><summary>阅读设计笔记 <span>SAY GOODBYE TO GOODLUCK / LINER NOTES ＋</span></summary><div class="story-content">
+            <div class="story-intro">
+              <p class="story-label">ABOUT THE GAME / 游戏说明</p>
+              <div class="story-copy">
+                <h3>答案早已选定，<br />剩下的只有表演。</h3>
+                <p>《好运作废》是一款围绕信息不对称与心理欺骗设计的筹码博弈游戏。在一座落寞的投币剧场里，玩偶走上深夜开放的秘密舞台，押上金币，争取继续登场的机会。</p>
+                <p>每局由庄家先秘密选定一张牌，再公开各牌位上的下注。其他玩家看得见筹码分布，却看不见答案。玩家需要结合庄家的行为、过往记录与公开信号，判断哪些线索可信，再决定把金币押在哪里。</p>
+                <p>规则设计包含双人基础模式与三人扩展模式。对局中的收益可以转为锁定战利品。舞台上的胜负，也会影响玩偶在故事里如何看待自己。</p>
+                <dl class="story-facts"><div><dt>类型</dt><dd>心理博弈 · 策略牌局</dd></div><div><dt>对局规模</dt><dd>双人基础模式 / 三人扩展模式</dd></div><div><dt>设计阶段</dt><dd>Demo 与目标规则并行迭代</dd></div></dl>
+                <p class="story-status">以下亮点依据目标规则与概念文档整理；账户钱包、每日领取等扩展系统尚未在当前 Demo 中实现。</p>
+              </div>
+            </div>
+            <div class="story-highlights">
+              <h3 class="story-label">DESIGN HIGHLIGHTS / 设计亮点</h3>
+              <ol class="highlight-list">
+                <li><span class="highlight-number" aria-hidden="true">01</span><div><h4>结果由庄家提前决定</h4><p>核心结果不靠随机发牌产生。庄家锁定答案后留下公开的下注分布，其他玩家要解读的是人的意图，而不是概率。</p></div></li>
+                <li><span class="highlight-number" aria-hidden="true">02</span><div><h4>下注也是一场表演</h4><p>筹码分布、动作和停顿都可能传递真实线索，也可能用来误导对手。角色的表演与玩家的推理发生在同一张牌桌上。</p></div></li>
+                <li><span class="highlight-number" aria-hidden="true">03</span><div><h4>金币连接规则与世界</h4><p>金币既是下注资源，也是玩偶继续活动的资格。目标规则区分本场可用筹码、锁定战利品与场外账户，让风险管理成为故事的一部分。</p></div></li>
+                <li><span class="highlight-number" aria-hidden="true">04</span><div><h4>胜利不等于得到认可</h4><p>主角骷髅玩偶试图通过牌局与服饰重新获得关注。玩家赢得一场游戏，与角色真正想要的东西，可以是两种不同的结果。</p></div></li>
+                <li><span class="highlight-number" aria-hidden="true">05</span><div><h4>秘密舞台有自己的性格</h4><p>房间选择角色“大肥猫”负责推荐场次并解释入场门槛。概念设计中，玩家保留最终选择权，剧场则借他的态度展现自己的价值标准。</p></div></li>
+              </ol>
+            </div>
+          </div></details>
         </article>
         <article class="project project--orange">
           <a href="https://pan.baidu.com/s/1u43P-NQJrQ0YKFCHGnk3cQ?pwd=ybew" target="_blank" rel="noopener noreferrer" aria-label="Download Anchor">
@@ -103,7 +162,7 @@
       </section>
 
       <section class="apps" id="apps">
-        <div class="section-head"><p class="eyebrow">03 / APPS &amp; TOOLS</p><p>( 02 )</p></div>
+        <div class="section-head"><p class="eyebrow">03 / 光盘收藏 · DIGITAL TOOLS</p><p>02 DISCS / SIDE B</p></div>
         <div class="app-grid">
           <a class="app-card app-card--orange" href="https://github.com/EscaeP/Replay30s" target="_blank" rel="noopener noreferrer"><span>01</span><h2>Replay30s</h2><p>Records the last 30 seconds of an Android phone screen.</p><b>GITHUB ↗</b></a>
           <a class="app-card app-card--blue" href="https://github.com/EscaeP/ncnn-android-GdrNet" target="_blank" rel="noopener noreferrer"><span>02</span><h2>ncnn-android-GdrNet</h2><p>Estimates 6D object poses from the LMO dataset on Android.</p><b>GITHUB ↗</b></a>
@@ -111,8 +170,8 @@
       </section>
 
       <section class="contact" id="contact">
-        <p class="eyebrow">04 / CONTACT</p>
-        <div><h2>Find me<br /><strong>online.</strong></h2><p>For games, experiments and new ideas.</p><div class="contact-links"><a href="https://escaep.itch.io/" target="_blank" rel="noopener noreferrer">itch.io ↗</a><a href="https://github.com/EscaeP" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="mailto:escae123@163.com">escae123@163.com ↗</a></div></div>
+        <p class="eyebrow">04 / 联系 · CONTACT</p>
+        <div><h2>一起让它<br /><strong>发生。</strong></h2><p>有游戏、实验或新想法？欢迎联系我。</p><div class="contact-links"><a href="https://escaep.itch.io/" target="_blank" rel="noopener noreferrer">itch.io ↗</a><a href="https://github.com/EscaeP" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="mailto:escae123@163.com">escae123@163.com ↗</a></div></div>
       </section>
     </main>
     <footer><p>© 2026 ESCAPE</p><a href="https://github.com/EscaeP" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="#top">BACK TO TOP ↑</a></footer>
